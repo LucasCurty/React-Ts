@@ -7,6 +7,32 @@
 
 }
 
+.header strong{
+    font-size: 1.5rem;
+}
+
 .header img{
-    height: 2rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.header img:hover {
+    filter: drop-shadow(0 0 2em #646cff);
+  }
+
+
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .header img {
+    animation: logo-spin infinite 20s linear;
+}
 }

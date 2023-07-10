@@ -21,7 +21,7 @@ interface Content {
 interface PostProps {
   author: Author;
   publishedAt: Date;
-  content: Content[];
+  content: Array<Content>;
 }
 
 export function Post({ author, content, publishedAt} : PostProps) {
@@ -37,17 +37,17 @@ export function Post({ author, content, publishedAt} : PostProps) {
         locale: ptBR,
         addSuffix: true
     })
-
+    //função para adicionar um novo comentario
     function handleCreateNewComment(event : FormEvent){
         event.preventDefault()
         setComments([...comments, newCommentText]);
         setNewCommentText('');
     }
-
+    // função para pegar a alteração do campo do comentario
     function handleNewCommentChange(event : ChangeEvent<HTMLTextAreaElement> ){
         setNewCommentText(event.target.value);
     }
-
+    // função de deletar o comentario
     function deleteComment(commentToDelete: string) {
       const commentsWithouDeleteOne = comments.filter(comment => {
         return comment !== commentToDelete

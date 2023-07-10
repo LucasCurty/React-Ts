@@ -1,12 +1,14 @@
 import style from './Header.module.css'
 
-import IgniteLogo from '../assets/logo-ignite.svg'
+import Atomic from '../assets/Atomic.svg'
 
 export function Header(){
     return (
         <header className={style.header}>
-                <img src={IgniteLogo} alt="Logo tipo Ignite" />
-                <strong>ICONE</strong>
+                <img className='logo' src={Atomic} alt="Logo tipo Ignite" />
+                <strong>
+                    React Basico
+                </strong>
         </header>
     )
 }
