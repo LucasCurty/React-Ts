@@ -18,13 +18,13 @@ const posts = [
       role: 'Web Developer',
     },
     content: [
-      { type: 'paragraph', content: 'Fala galera!🤚' },
+      { type: 'paragraph', content: 'Fala galera, blz?!🤚' },
       {
         type: 'paragraph',
         content:
-          'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocket Seat. O nome do projeto é DoctorCare🚀',
+          'Este é um projeto React com conceitos básicos, para registrar essa aplicação e toda aprendizagem.🚀',
       },
-      { type: 'link', content: 'jane.design/doctorcare' },
+      { type: 'link', content: 'lucas.curty/contato' },
     ],
     publishedAt: new Date('2023-07-03 20:00:00'),
   }
